@@ -1,0 +1,30 @@
+{
+  "name": "fullscreen-addon",
+  "version": "1.0.0",
+  "description": "Fullscreen Addon for Browsers",
+  "main": "index.js",
+  "scripts": {
+    "build": "web-ext build --overwrite-dest -i package.json README.md yarn.lock",
+    "dev": "web-ext run --verbose -u https://mehmetbaker.dev",
+    "lint": "eslint index.js",
+    "lint-fix": "eslint --fix index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehmetb/fullscreen-addon.git"
+  },
+  "author": "Mehmet Baker <mehmet@mehmetbaker.dev> (https://mehmetbaker.dev)",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/mehmetb/fullscreen-addon/issues"
+  },
+  "homepage": "https://github.com/mehmetb/fullscreen-addon#readme",
+  "devDependencies": {
+    "eslint": "^8.42.0",
+    "eslint-config-airbnb-base": "*",
+    "eslint-plugin-import": "*",
+    "web-ext": "^7.6.2"
+  },
+  "packageManager": "yarn@3.6.0"
+}
