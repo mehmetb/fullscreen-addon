@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "fullscreen-addon",
+  "version": "3.0.0",
+  "description": "A browser extension to dim web pages.",
+
+  "author": "Mehmet Baker",
+  "homepage_url": "https://github.com/mehmetb/fullscreen-addon#readme",
+
+  "host_permissions": ["<all_urls>"],
+
+  "content_scripts": [
+    {
+      "js": ["index.js"],
+      "matches": ["<all_urls>"],
+      "match_about_blank": true,
+      "run_at": "document_idle"
+    }
+  ]
+}
